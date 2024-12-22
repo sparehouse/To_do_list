@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="to.css">
+</head>
+<body>
+    <h1>Task Management</h1>
+    <div class="container">
+        <form action="#" method="post">
+            <input type="text" placeholder="Add name" id="itemname" required>
+            <input type="text" placeholder="Add task" id="itemqty" required>
+            <input type="submit" value="Add task">
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Name</th>
+                    <th>Task</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="inventory"></tbody>
+        </table>
+    </div>
+
+    <script src="to.js"></script>
+</body>
+</html>
