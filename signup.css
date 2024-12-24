@@ -17,10 +17,11 @@ body {
     background-color: #ffffff;    
 }
 .signup-form{
-    width: 50%;
+    width: 46%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
 
 }
 .half{
@@ -80,4 +81,16 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.role label{
+    display: inline-block;
+}
+.role input{
+display: inline-block;
+width: 10%;
+   
+}
+.error{
+    color: red;
 }

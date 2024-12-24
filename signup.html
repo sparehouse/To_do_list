@@ -8,8 +8,8 @@
 </head>
 <body>
     <div class="container">
-        <div>
-            <img src="sign.png" alt="" width="50%" height="50%">
+        <div style="width: 40%;">
+            <img src="Forms-rafiki.png" alt="" width="50%" height="50%">
         </div>
         <div class="signup-form">
             <div class="half">
@@ -40,6 +40,18 @@
                 <div class="input-group">
                     <label for="urepass">Confirm Password</label>
                     <input type="password" id="urepass" name="urepass" required>
+                    <span class="error"></span>
+                </div>
+
+                <div class="input-group role" >
+                    <label for="urepass">Your Role</label>
+                   <div>
+                    <label for="urepass">user</label>
+                    <input type="radio" id="urepass" value="admin" name="role" required>
+                    <label for="urepass">admin</label>
+                    <input type="radio" id="urepass" value="user" name="role" required >
+                   </div>
+
                     <span class="error"></span>
                 </div>
                 

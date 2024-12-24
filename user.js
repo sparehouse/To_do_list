@@ -39,45 +39,24 @@ const renderTable = () => {
 <div>${item.name}</div>
 <div>${item.qty}</div>
 <div>${item.itemdate}</div>
-<div> <button class="edit" onclick="editItem(${item.id})">Edit</button>
- <button class="delete"   onclick="deleteItem(${item.id})">Delete</button>
+<div> 
+ <button   onclick="Doneitem(${item.id})">Done</button>
 </div>
  `
         tbody.appendChild(row);
     });
 };
 
-const editItem = (id) => {
-    const item = items.find((item) => item.id === id);
-    if (item) {
-        const newName = prompt("Enter task name", item.name);
-        const newQty = prompt("Enter task quantity", item.qty);
-        if (newName && newQty) {
-            item.name = newName;
-            item.qty = newQty;
-            renderTable();
-        }
-    }
-};
 
-const deleteItem = (id) => {
-    items = items.filter((item) => item.id !== id);
-    renderTable();
+
+
+const Doneitem = (id) => {
+   
+   alert("Its Done")
 };
 
 
 
-
-
-document.getElementById('itemname').addEventListener('input', function(event) {
-    let value = event.target.value;
-    if (/[^a-zA-Zأ-ي]/.test(value)) {
-        event.target.value = value.replace(/[^a-zA-Zأ-ي]/g, ''); 
-        document.getElementById('errorMessage').style.display = 'block';
-    } else {
-        document.getElementById('errorMessage').style.display = 'none';
-    }
-});
 
 
 

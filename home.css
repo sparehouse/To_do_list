@@ -1,7 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: rgb(251, 252, 252);
-    overflow-y: hidden;
+    background-color:#fff(218, 27%, 94%, 0.976);
+    overflow-x: hidden;
     font-family: sans-serif;
+   
 }
 .container{
    
@@ -13,10 +20,10 @@ body{
 
 }
 .logo{
-    margin-right: 50%;
+    /* margin-right: 50%; */
     font-size: 50px;
     font-weight: 800;
-    
+    margin:  auto 50% auto 0;
 }
 .logo a{
     color: #185bcf;
@@ -31,12 +38,43 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-color: #174173;
+}
+.nav p a{
+    color: #fff;
+    transition: .2s;
+    position: relative;
+    padding-right: 20px;
+    text-align: center;
+}
+.nav p a:hover{
+    color: #b2bcd3;
+  
+}
+.nav p a::after{
+    content: "";
+    position: absolute;
+    width:95px;
+    height: 3px;
+    border-radius: 20px;
+   
+    left: -5px;
+    top: 120%;
+    margin-left: 1px;
+}
+
+.nav a:hover::after{
+    background-color: #2251bc;
+}
+
+.nav p:nth-child(1) a:after{
+    background-color: #fff;
 }
 p{
     padding: 0 20px;
     font-size: x-large;
     margin: 0 10px;
-    font-weight: 600;
+    font-weight: 700;
 }
 a{
     text-decoration: none;
@@ -44,15 +82,20 @@ a{
 }
 .text p{
     font-size: 80px;
-    width: 40%;
+    padding: 90px 20px;
+   
 }
 .text{
     display: flex;
-    justify-content: flex-start;
-    padding-left: 10%;
-    padding-top: 5%;
+    justify-content: space-around;
+  /*  padding-left: 10%;
+    padding-top: 5%;*/
+    padding: 80px 20px;
 
 }
 span{
-    color: #185bcf;
+    color: #174173;
 }
+
+
+
